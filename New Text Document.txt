@@ -1,0 +1,10 @@
+first creating the app .commapp in ecommproject
+further create customuser
+
+
+now all u have to create a CUSTOM USER.
+using the syntax:
+
+``` class customuser(AbstractUser)
+		usertypechoices=((1,'Admin'),(2,'staff'),(3,"Merchant"),(4,"Customer"))
+		user_type=models.Charfield(max_length=255,choices=user_type_choices,default=1)
